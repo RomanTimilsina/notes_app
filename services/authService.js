@@ -13,7 +13,7 @@ const authService = {
             }
         }
     },
-    async login( email, password) {
+    async login( email, password ) {
         try {
             const response = await account.createEmailPasswordSession( email, password )
             return response;
